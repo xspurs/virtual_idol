@@ -1,0 +1,5 @@
+faiss-cpu==1.10.0
+numpy==1.26.4
+requests==2.31.0
+sentence-transformers==3.4.1
+streamlit==1.43.2

@@ -77,7 +77,7 @@ def generate_response(user_input: str):
         "https://api.deepseek.com/v1/chat/completions",
         headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}"},
         json={
-            "model": "deepseek-chat",
+            "model": f"{MODEL_NAME}",
             "messages": [
                 {"role": "system", "content": f"你现在的身份是{st.session_state.selected_star}，请根据以下信息回答：{context}，回答要口语化，符合人设，避免输出“（歪着头思考）”等带括号形式的文字，避免和文字聊天不相符，避免每句话都带口头禅。"},
                 {"role": "user", "content": user_input}
